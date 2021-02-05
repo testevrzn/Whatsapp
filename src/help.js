@@ -1,10 +1,9 @@
 const help = (prefix) => {
 	return `
-	        ☁ *BOT CAIO* ☁
--------------------------------------------------------	  
+	        ☁ *BOT DO C∆IO* -------------------------------------------------------	  
 ➜ Prefix: 「  ${prefix}  」
-➜ Meu Dono: *CAIO*
-➜ Contato : [OFF]
+➜ Meu Dono: *C∆IO O BR∆BO*
+➜ Contato : Wa.me/5519999124606
 -------------------------------------------------------
 	     （ *MENU SOBRE* ）
 ➜ Comando: ${prefix}blocklist
