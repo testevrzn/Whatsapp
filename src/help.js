@@ -1,10 +1,10 @@
 const help = (prefix) => {
 	return `
-	        ☁ *BOT VRAUZIN* ☁
+	        ☁ *BOT CAIO* ☁
 -------------------------------------------------------	  
 ➜ Prefix: 「  ${prefix}  」
-➜ Meu Dono: *Vrauzin*
-➜ Contato : +55 (98) 8501-8147
+➜ Meu Dono: *CAIO*
+➜ Contato : [OFF]
 -------------------------------------------------------
 	     （ *MENU SOBRE* ）
 ➜ Comando: ${prefix}blocklist
