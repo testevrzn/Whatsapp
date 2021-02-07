@@ -1,11 +1,11 @@
 const help = (prefix) => {
 	return `
-「 *BOT DO TIO VRAU* 」
+「 *BOT DO CAIO* 」
 
 ◪ *informações*
   ❏ Prefix: 「  ${prefix}  」
   ❏ Criador : VRAU
-  ❏ Contato : Wa.me/5598985018147
+  ❏ Contato : Wa.me/5519999124606
 
 ◪ *SOBRE*
   │
