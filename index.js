@@ -84,7 +84,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
-prefix = '/'
+prefix = '*'
 blocked = []
 
 /******BEGIN OF FUNCTIONS INPUT******/
@@ -246,7 +246,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'âŒ› Aguarde Por Favor... âŒ›',
+				wait: 'âŒ› Calmaer opoha to fazendo âŒ›',
 				success: 'âœ”ï¸ Sucesso âœ”ï¸',
                                 levelon: 'â¬ âœ” â­ *habilitar Level*',
 				leveloff: ' â¬ X â­  *desabilitar Level*',
@@ -259,17 +259,17 @@ async function starts() {
 				only: {
 					group: '[â—] Este comando sÃ³ pode ser usado em grupos! âŒ',
 					ownerG: '[â—] Este comando sÃ³ pode ser usado pelo grupo proprietÃ¡rio! âŒ',
-					ownerB: '[â—] Este comando sÃ³ pode ser usado pelo Diego! âŒ',
+					ownerB: '[â—] Este comando sÃ³ pode ser usado pelo Toin! âŒ',
 					admin: '[â—] Este comando sÃ³ pode ser usado por administradores de grupo! âŒ',
 					Badmin: '[â—] Este comando sÃ³ pode ser usado quando o bot se torna administrador! âŒ',
-                                        daftarB: `â”€â”€ ã€ŒREGISTRE-SEã€ â”€â”€\nOlÃ¡ como!\nVocÃª nÃ£o estÃ¡ registrado no banco de dados, \n\nComando : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar Panda|18`,
+                                        daftarB: `â”€â”€ ã€ŒREGISTRE-SEã€ â”€â”€\nOlÃ¡ como!\nVocÃª nÃ£o estÃ¡ registrado no banco de dados, \n\nComando : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar Toin|18`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511989677033@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["556296638900@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -287,7 +287,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '5511989677033@s.whatsapp.net'
+                        const NomerOwner = '556296638900@s.whatsapp.net'
                         /******ApiKey Input******/
                         const BarBarKey = 'YOUR_APIKEY'
                         /******End of ApiKey Input******/
@@ -356,7 +356,7 @@ case 'timer':
                 case 'bahasa':
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
 				break
-				case 'pandamenu':
+				case 'toinmenu':
 					client.sendMessage(from, toinmenu(prefix, sender), text, {quoted: mek})
 							break
 							case 'menuadmin':
@@ -808,7 +808,7 @@ case 'timer':
 						teks += `â• âž¥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Panda BOT ã€™', members_id, true)
+					mentions('â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Toin BOT ã€™', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing) 
@@ -821,7 +821,7 @@ case 'timer':
 						teks += `â• âž¥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Panda BOT ã€™', text, {quoted: mek})
+					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Toin BOT ã€™', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -834,7 +834,7 @@ case 'timer':
 						teks += `â• âž¥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Panda BOT ã€™', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Toin BOT ã€™', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -847,7 +847,7 @@ case 'timer':
 						teks += `â• âž¥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Panda BOT ã€™', text, {quoted: mek})
+					client.sendMessage(from, 'â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Toin BOT ã€™', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -860,7 +860,7 @@ case 'timer':
 						teks += `â• âž¥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Panda BOT ã€™')
+					reply('â•”â•â•âœªã€˜ Mencionando Todos ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ Toin BOT ã€™')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -1310,7 +1310,7 @@ case 'timer':
                                   case 'daftar':
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('vocÃª jÃ¡ estÃ¡ registrado')
-					if (args.length < 1) return reply(`ParÃ¢metro incorreto \nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar Panda|18`)
+					if (args.length < 1) return reply(`ParÃ¢metro incorreto \nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar Toin|18`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
@@ -1418,7 +1418,7 @@ case 'timer':
 					var gh = body.slice(11)
 					var teks1 = gh.split("|")[0];
 					var teks2 = gh.split("|")[1];
-					if (args.length < 1) return reply(`onde estÃ¡ o texto? exemplo ${prefix}logowolf Panda|BOT`)
+					if (args.length < 1) return reply(`onde estÃ¡ o texto? exemplo ${prefix}logowolf Toin|BOT`)
 					reply(mess.wait)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
@@ -1487,7 +1487,7 @@ case 'timer':
 					var gh = body.slice(11)
 					var teks1 = gh.split("|")[0];
 					var teks2 = gh.split("|")[1];
-					if (args.length < 1) return reply(`onde estÃ¡ o texto? exemplo ${prefix}logowolf Panda|BOT`)
+					if (args.length < 1) return reply(`onde estÃ¡ o texto? exemplo ${prefix}logowolf Toin|BOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
 					reply(mess.wait)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
@@ -1505,7 +1505,7 @@ case 'timer':
 					var gh = body.slice(7)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
-					if (args.length < 1) return reply(`CadÃª o texto, hum\nExemplo: ${prefix}phlogo |Panda|BOT`)
+					if (args.length < 1) return reply(`CadÃª o texto, hum\nExemplo: ${prefix}phlogo |Toin|BOT`)
 					reply(mess.wait)
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
